@@ -3,7 +3,6 @@ Algorithm 2 code repository for SENG499 Summer 2022 project.
 
 ## Contributors
 - Ethan McNamara (@ethan-mcnamara)
-- Dana Bell (@harkken)
 - Dendy Addison (@dendya)
 - Jesse Browell (@jessebrowell)
-- Ben Mazerolle (@bmazerolle)
+- Ty Ricard (@tyricard)
