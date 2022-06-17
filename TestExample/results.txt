@@ -1,0 +1,1367 @@
+SENG265
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 12 enteries for SENG265 A01 First Term
+           Predicted Capacity 184 vs. Actual Capacity 115
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG265 A02 First Term
+           Predicted Capacity 29 vs. Actual Capacity 15
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 69 enteries for SENG265 A03 First Term
+           Predicted Capacity 55 vs. Actual Capacity 38
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 69 enteries for SENG265 A04 First Term
+           Predicted Capacity 55 vs. Actual Capacity 38
+
+   Second Term
+       A01
+           There were 7 enteries for SENG265 A01 Second Term
+           Predicted Capacity 163 vs. Actual Capacity 115
+       A02
+           There were 7 enteries for SENG265 A02 Second Term
+           Predicted Capacity 29 vs. Actual Capacity 15
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 69 enteries for SENG265 A03 Second Term
+           Predicted Capacity 55 vs. Actual Capacity 38
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 69 enteries for SENG265 A04 Second Term
+           Predicted Capacity 55 vs. Actual Capacity 38
+
+   Summer
+       A01
+           There were 5 enteries for SENG265 A01 Summer
+           Predicted Capacity 125 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG265 A02 Summer
+           Predicted Capacity 29 vs. Actual Capacity 15
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 69 enteries for SENG265 A03 Summer
+           Predicted Capacity 55 vs. Actual Capacity 38
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 69 enteries for SENG265 A04 Summer
+           Predicted Capacity 55 vs. Actual Capacity 38
+
+
+SENG275
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Second Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+
+SENG265
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 12 enteries for SENG265 A01 First Term
+           Predicted Capacity 184 vs. Actual Capacity 115
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG265 A02 First Term
+           Predicted Capacity 29 vs. Actual Capacity 15
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 69 enteries for SENG265 A03 First Term
+           Predicted Capacity 55 vs. Actual Capacity 38
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 69 enteries for SENG265 A04 First Term
+           Predicted Capacity 55 vs. Actual Capacity 38
+
+   Second Term
+       A01
+           There were 7 enteries for SENG265 A01 Second Term
+           Predicted Capacity 163 vs. Actual Capacity 115
+       A02
+           There were 7 enteries for SENG265 A02 Second Term
+           Predicted Capacity 29 vs. Actual Capacity 15
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 69 enteries for SENG265 A03 Second Term
+           Predicted Capacity 55 vs. Actual Capacity 38
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 69 enteries for SENG265 A04 Second Term
+           Predicted Capacity 55 vs. Actual Capacity 38
+
+   Summer
+       A01
+           There were 5 enteries for SENG265 A01 Summer
+           Predicted Capacity 125 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG265 A02 Summer
+           Predicted Capacity 29 vs. Actual Capacity 15
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 69 enteries for SENG265 A03 Summer
+           Predicted Capacity 55 vs. Actual Capacity 38
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 69 enteries for SENG265 A04 Summer
+           Predicted Capacity 55 vs. Actual Capacity 38
+
+
+SENG275
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Second Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+
+SENG310
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 12 enteries for SENG310 A01 First Term
+           Predicted Capacity 274 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 5 enteries for SENG310 A02 First Term
+           Predicted Capacity 66 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 64 enteries for SENG310 A03 First Term
+           Predicted Capacity 61 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 64 enteries for SENG310 A04 First Term
+           Predicted Capacity 61 vs. Actual Capacity 0
+
+   Second Term
+       A01
+           There were 7 enteries for SENG310 A01 Second Term
+           Predicted Capacity 263 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 5 enteries for SENG310 A02 Second Term
+           Predicted Capacity 66 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 64 enteries for SENG310 A03 Second Term
+           Predicted Capacity 61 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 64 enteries for SENG310 A04 Second Term
+           Predicted Capacity 61 vs. Actual Capacity 0
+
+   Summer
+       A01
+           There were 5 enteries for SENG310 A01 Summer
+           Predicted Capacity 98 vs. Actual Capacity 0
+       A02
+           There were 5 enteries for SENG310 A02 Summer
+           Predicted Capacity 66 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 64 enteries for SENG310 A03 Summer
+           Predicted Capacity 61 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 64 enteries for SENG310 A04 Summer
+           Predicted Capacity 61 vs. Actual Capacity 0
+
+
+SENG321
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG321 A01 First Term
+           Predicted Capacity -22 vs. Actual Capacity 72
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG321 A02 First Term
+           Predicted Capacity 40 vs. Actual Capacity 72
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 35 enteries for SENG321 A03 First Term
+           Predicted Capacity 14 vs. Actual Capacity 36
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 35 enteries for SENG321 A04 First Term
+           Predicted Capacity 14 vs. Actual Capacity 36
+
+   Second Term
+       A01
+           There were 7 enteries for SENG321 A01 Second Term
+           Predicted Capacity -22 vs. Actual Capacity 72
+       A02
+           There were 7 enteries for SENG321 A02 Second Term
+           Predicted Capacity 40 vs. Actual Capacity 72
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 35 enteries for SENG321 A03 Second Term
+           Predicted Capacity 14 vs. Actual Capacity 36
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 35 enteries for SENG321 A04 Second Term
+           Predicted Capacity 14 vs. Actual Capacity 36
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG321 A01 Summer
+           Predicted Capacity -22 vs. Actual Capacity 72
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG321 A02 Summer
+           Predicted Capacity 40 vs. Actual Capacity 72
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 35 enteries for SENG321 A03 Summer
+           Predicted Capacity 14 vs. Actual Capacity 36
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 35 enteries for SENG321 A04 Summer
+           Predicted Capacity 14 vs. Actual Capacity 36
+
+
+SENG330
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Second Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+
+SENG350
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Second Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+
+SENG360
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Second Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+
+SENG371
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG371 A01 First Term
+           Predicted Capacity 0 vs. Actual Capacity 8
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG371 A02 First Term
+           Predicted Capacity 84 vs. Actual Capacity 64
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 32 enteries for SENG371 A03 First Term
+           Predicted Capacity 35 vs. Actual Capacity 38
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 32 enteries for SENG371 A04 First Term
+           Predicted Capacity 35 vs. Actual Capacity 38
+
+   Second Term
+       A01
+           There were 7 enteries for SENG371 A01 Second Term
+           Predicted Capacity 0 vs. Actual Capacity 8
+       A02
+           There were 7 enteries for SENG371 A02 Second Term
+           Predicted Capacity 84 vs. Actual Capacity 64
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 32 enteries for SENG371 A03 Second Term
+           Predicted Capacity 35 vs. Actual Capacity 38
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 32 enteries for SENG371 A04 Second Term
+           Predicted Capacity 35 vs. Actual Capacity 38
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG371 A01 Summer
+           Predicted Capacity 0 vs. Actual Capacity 8
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG371 A02 Summer
+           Predicted Capacity 84 vs. Actual Capacity 64
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 32 enteries for SENG371 A03 Summer
+           Predicted Capacity 35 vs. Actual Capacity 38
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 32 enteries for SENG371 A04 Summer
+           Predicted Capacity 35 vs. Actual Capacity 38
+
+
+SENG401
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG401 A01 First Term
+           Predicted Capacity 45 vs. Actual Capacity 30
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG401 A02 First Term
+           Predicted Capacity 41 vs. Actual Capacity 40
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 14 enteries for SENG401 A03 First Term
+           Predicted Capacity 43 vs. Actual Capacity 40
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 14 enteries for SENG401 A04 First Term
+           Predicted Capacity 43 vs. Actual Capacity 40
+
+   Second Term
+       A01
+           There were 7 enteries for SENG401 A01 Second Term
+           Predicted Capacity 45 vs. Actual Capacity 30
+       A02
+           There were 7 enteries for SENG401 A02 Second Term
+           Predicted Capacity 41 vs. Actual Capacity 40
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 14 enteries for SENG401 A03 Second Term
+           Predicted Capacity 43 vs. Actual Capacity 40
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 14 enteries for SENG401 A04 Second Term
+           Predicted Capacity 43 vs. Actual Capacity 40
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG401 A01 Summer
+           Predicted Capacity 45 vs. Actual Capacity 30
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG401 A02 Summer
+           Predicted Capacity 41 vs. Actual Capacity 40
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 14 enteries for SENG401 A03 Summer
+           Predicted Capacity 43 vs. Actual Capacity 40
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 14 enteries for SENG401 A04 Summer
+           Predicted Capacity 43 vs. Actual Capacity 40
+
+
+SENG411
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 1 enteries for SENG411 A01 First Term
+           Predicted Capacity 20 vs. Actual Capacity 43
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG411 A02 First Term
+           Predicted Capacity 20 vs. Actual Capacity 30
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG411 A03 First Term
+           Predicted Capacity 20 vs. Actual Capacity 30
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG411 A04 First Term
+           Predicted Capacity 20 vs. Actual Capacity 30
+
+   Second Term
+       A01
+           There were 1 enteries for SENG411 A01 Second Term
+           Predicted Capacity 20 vs. Actual Capacity 43
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG411 A02 Second Term
+           Predicted Capacity 20 vs. Actual Capacity 30
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG411 A03 Second Term
+           Predicted Capacity 20 vs. Actual Capacity 30
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG411 A04 Second Term
+           Predicted Capacity 20 vs. Actual Capacity 30
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 1 enteries for SENG411 A01 Summer
+           Predicted Capacity 20 vs. Actual Capacity 43
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG411 A02 Summer
+           Predicted Capacity 20 vs. Actual Capacity 30
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG411 A03 Summer
+           Predicted Capacity 20 vs. Actual Capacity 30
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG411 A04 Summer
+           Predicted Capacity 20 vs. Actual Capacity 30
+
+
+SENG421
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 1 enteries for SENG421 A01 First Term
+           Predicted Capacity 8 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG421 A02 First Term
+           Predicted Capacity 8 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG421 A03 First Term
+           Predicted Capacity 8 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG421 A04 First Term
+           Predicted Capacity 8 vs. Actual Capacity 0
+
+   Second Term
+       A01
+           There were 1 enteries for SENG421 A01 Second Term
+           Predicted Capacity 8 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG421 A02 Second Term
+           Predicted Capacity 8 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG421 A03 Second Term
+           Predicted Capacity 8 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG421 A04 Second Term
+           Predicted Capacity 8 vs. Actual Capacity 0
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 1 enteries for SENG421 A01 Summer
+           Predicted Capacity 8 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG421 A02 Summer
+           Predicted Capacity 8 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG421 A03 Summer
+           Predicted Capacity 8 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG421 A04 Summer
+           Predicted Capacity 8 vs. Actual Capacity 0
+
+
+SENG422
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 3 enteries for SENG422 A01 First Term
+           Predicted Capacity 18 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 3 enteries for SENG422 A02 First Term
+           Predicted Capacity 7 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 9 enteries for SENG422 A03 First Term
+           Predicted Capacity -3234225242786326 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 9 enteries for SENG422 A04 First Term
+           Predicted Capacity -3234225242786326 vs. Actual Capacity 0
+
+   Second Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 3 enteries for SENG422 A01 Second Term
+           Predicted Capacity 18 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 3 enteries for SENG422 A02 Second Term
+           Predicted Capacity 7 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 9 enteries for SENG422 A03 Second Term
+           Predicted Capacity -3234225242786326 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 9 enteries for SENG422 A04 Second Term
+           Predicted Capacity -3234225242786326 vs. Actual Capacity 0
+
+   Summer
+       A01
+           There were 3 enteries for SENG422 A01 Summer
+           Predicted Capacity 18 vs. Actual Capacity 0
+       A02
+           There were 3 enteries for SENG422 A02 Summer
+           Predicted Capacity 7 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 9 enteries for SENG422 A03 Summer
+           Predicted Capacity -3234225242786326 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 9 enteries for SENG422 A04 Summer
+           Predicted Capacity -3234225242786326 vs. Actual Capacity 0
+
+
+SENG426
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 5 enteries for SENG426 A01 First Term
+           Predicted Capacity 63 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 5 enteries for SENG426 A02 First Term
+           Predicted Capacity 1 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 17 enteries for SENG426 A03 First Term
+           Predicted Capacity -75716523436465 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 17 enteries for SENG426 A04 First Term
+           Predicted Capacity -75716523436465 vs. Actual Capacity 0
+
+   Second Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 5 enteries for SENG426 A01 Second Term
+           Predicted Capacity 63 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 5 enteries for SENG426 A02 Second Term
+           Predicted Capacity 1 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 17 enteries for SENG426 A03 Second Term
+           Predicted Capacity -75716523436465 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 17 enteries for SENG426 A04 Second Term
+           Predicted Capacity -75716523436465 vs. Actual Capacity 0
+
+   Summer
+       A01
+           There were 5 enteries for SENG426 A01 Summer
+           Predicted Capacity 63 vs. Actual Capacity 0
+       A02
+           There were 5 enteries for SENG426 A02 Summer
+           Predicted Capacity 1 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 17 enteries for SENG426 A03 Summer
+           Predicted Capacity -75716523436465 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 17 enteries for SENG426 A04 Summer
+           Predicted Capacity -75716523436465 vs. Actual Capacity 0
+
+
+SENG435
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 1 enteries for SENG435 A01 First Term
+           Predicted Capacity 5 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 1 enteries for SENG435 A02 First Term
+           Predicted Capacity 5 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 1 enteries for SENG435 A03 First Term
+           Predicted Capacity 5 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 1 enteries for SENG435 A04 First Term
+           Predicted Capacity 5 vs. Actual Capacity 0
+
+   Second Term
+       A01
+           There were 1 enteries for SENG435 A01 Second Term
+           Predicted Capacity 5 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 1 enteries for SENG435 A02 Second Term
+           Predicted Capacity 5 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 1 enteries for SENG435 A03 Second Term
+           Predicted Capacity 5 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 1 enteries for SENG435 A04 Second Term
+           Predicted Capacity 5 vs. Actual Capacity 0
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 1 enteries for SENG435 A01 Summer
+           Predicted Capacity 5 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 1 enteries for SENG435 A02 Summer
+           Predicted Capacity 5 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 1 enteries for SENG435 A03 Summer
+           Predicted Capacity 5 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 1 enteries for SENG435 A04 Summer
+           Predicted Capacity 5 vs. Actual Capacity 0
+
+
+SENG440
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 5 enteries for SENG440 A01 First Term
+           Predicted Capacity 70 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 5 enteries for SENG440 A02 First Term
+           Predicted Capacity 24 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 10 enteries for SENG440 A03 First Term
+           Predicted Capacity 47 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 10 enteries for SENG440 A04 First Term
+           Predicted Capacity 47 vs. Actual Capacity 0
+
+   Second Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 5 enteries for SENG440 A01 Second Term
+           Predicted Capacity 70 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 5 enteries for SENG440 A02 Second Term
+           Predicted Capacity 24 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 10 enteries for SENG440 A03 Second Term
+           Predicted Capacity 47 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 10 enteries for SENG440 A04 Second Term
+           Predicted Capacity 47 vs. Actual Capacity 0
+
+   Summer
+       A01
+           There were 5 enteries for SENG440 A01 Summer
+           Predicted Capacity 70 vs. Actual Capacity 0
+       A02
+           There were 5 enteries for SENG440 A02 Summer
+           Predicted Capacity 24 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 10 enteries for SENG440 A03 Summer
+           Predicted Capacity 47 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 10 enteries for SENG440 A04 Summer
+           Predicted Capacity 47 vs. Actual Capacity 0
+
+
+SENG460
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG460 A01 First Term
+           Predicted Capacity 51 vs. Actual Capacity 50
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG460 A02 First Term
+           Predicted Capacity 80 vs. Actual Capacity 84
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 14 enteries for SENG460 A03 First Term
+           Predicted Capacity 65 vs. Actual Capacity 84
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 14 enteries for SENG460 A04 First Term
+           Predicted Capacity 65 vs. Actual Capacity 84
+
+   Second Term
+       A01
+           There were 7 enteries for SENG460 A01 Second Term
+           Predicted Capacity 51 vs. Actual Capacity 50
+       A02
+           There were 7 enteries for SENG460 A02 Second Term
+           Predicted Capacity 80 vs. Actual Capacity 84
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 14 enteries for SENG460 A03 Second Term
+           Predicted Capacity 65 vs. Actual Capacity 84
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 14 enteries for SENG460 A04 Second Term
+           Predicted Capacity 65 vs. Actual Capacity 84
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG460 A01 Summer
+           Predicted Capacity 51 vs. Actual Capacity 50
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG460 A02 Summer
+           Predicted Capacity 80 vs. Actual Capacity 84
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 14 enteries for SENG460 A03 Summer
+           Predicted Capacity 65 vs. Actual Capacity 84
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 14 enteries for SENG460 A04 Summer
+           Predicted Capacity 65 vs. Actual Capacity 84
+
+
+SENG461
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Second Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+
+SENG468
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 1 enteries for SENG468 A01 First Term
+           Predicted Capacity 28 vs. Actual Capacity 20
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 1 enteries for SENG468 A02 First Term
+           Predicted Capacity 38 vs. Actual Capacity 30
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 4 enteries for SENG468 A03 First Term
+           Predicted Capacity 29 vs. Actual Capacity 20
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 4 enteries for SENG468 A04 First Term
+           Predicted Capacity 29 vs. Actual Capacity 20
+
+   Second Term
+       A01
+           There were 1 enteries for SENG468 A01 Second Term
+           Predicted Capacity 28 vs. Actual Capacity 20
+       A02
+           There were 1 enteries for SENG468 A02 Second Term
+           Predicted Capacity 38 vs. Actual Capacity 30
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 4 enteries for SENG468 A03 Second Term
+           Predicted Capacity 29 vs. Actual Capacity 20
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 4 enteries for SENG468 A04 Second Term
+           Predicted Capacity 29 vs. Actual Capacity 20
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 1 enteries for SENG468 A01 Summer
+           Predicted Capacity 28 vs. Actual Capacity 20
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were 1 enteries for SENG468 A02 Summer
+           Predicted Capacity 38 vs. Actual Capacity 30
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 4 enteries for SENG468 A03 Summer
+           Predicted Capacity 29 vs. Actual Capacity 20
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 4 enteries for SENG468 A04 Summer
+           Predicted Capacity 29 vs. Actual Capacity 20
+
+
+SENG474
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG474 A01 First Term
+           Predicted Capacity 135 vs. Actual Capacity 70
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 33 enteries for SENG474 A02 First Term
+           Predicted Capacity 38 vs. Actual Capacity 30
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 33 enteries for SENG474 A03 First Term
+           Predicted Capacity 38 vs. Actual Capacity 30
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 33 enteries for SENG474 A04 First Term
+           Predicted Capacity 38 vs. Actual Capacity 30
+
+   Second Term
+       A01
+           There were 7 enteries for SENG474 A01 Second Term
+           Predicted Capacity 135 vs. Actual Capacity 70
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 33 enteries for SENG474 A02 Second Term
+           Predicted Capacity 38 vs. Actual Capacity 30
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 33 enteries for SENG474 A03 Second Term
+           Predicted Capacity 38 vs. Actual Capacity 30
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 33 enteries for SENG474 A04 Second Term
+           Predicted Capacity 38 vs. Actual Capacity 30
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 7 enteries for SENG474 A01 Summer
+           Predicted Capacity 135 vs. Actual Capacity 70
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 33 enteries for SENG474 A02 Summer
+           Predicted Capacity 38 vs. Actual Capacity 30
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 33 enteries for SENG474 A03 Summer
+           Predicted Capacity 38 vs. Actual Capacity 30
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 33 enteries for SENG474 A04 Summer
+           Predicted Capacity 38 vs. Actual Capacity 30
+
+
+SENG475
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Second Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+
+SENG480A
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 4 enteries for SENG480A A01 First Term
+           Predicted Capacity 38 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 4 enteries for SENG480A A02 First Term
+           Predicted Capacity 38 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 4 enteries for SENG480A A03 First Term
+           Predicted Capacity 38 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 4 enteries for SENG480A A04 First Term
+           Predicted Capacity 38 vs. Actual Capacity 0
+
+   Second Term
+       A01
+           There were 1 enteries for SENG480A A01 Second Term
+           Predicted Capacity 17 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 4 enteries for SENG480A A02 Second Term
+           Predicted Capacity 38 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 4 enteries for SENG480A A03 Second Term
+           Predicted Capacity 38 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 4 enteries for SENG480A A04 Second Term
+           Predicted Capacity 38 vs. Actual Capacity 0
+
+   Summer
+       A01
+           There were 3 enteries for SENG480A A01 Summer
+           Predicted Capacity 66 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 4 enteries for SENG480A A02 Summer
+           Predicted Capacity 38 vs. Actual Capacity 0
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 4 enteries for SENG480A A03 Summer
+           Predicted Capacity 38 vs. Actual Capacity 0
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 4 enteries for SENG480A A04 Summer
+           Predicted Capacity 38 vs. Actual Capacity 0
+
+
+SENG480B
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Second Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+
+SENG480C
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 2 enteries for SENG480C A01 First Term
+           Predicted Capacity 26 vs. Actual Capacity 10
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG480C A02 First Term
+           Predicted Capacity 26 vs. Actual Capacity 3
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG480C A03 First Term
+           Predicted Capacity 26 vs. Actual Capacity 3
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG480C A04 First Term
+           Predicted Capacity 26 vs. Actual Capacity 3
+
+   Second Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 2 enteries for SENG480C A01 Second Term
+           Predicted Capacity 26 vs. Actual Capacity 10
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG480C A02 Second Term
+           Predicted Capacity 26 vs. Actual Capacity 3
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG480C A03 Second Term
+           Predicted Capacity 26 vs. Actual Capacity 3
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG480C A04 Second Term
+           Predicted Capacity 26 vs. Actual Capacity 3
+
+   Summer
+       A01
+           There were 2 enteries for SENG480C A01 Summer
+           Predicted Capacity 26 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG480C A02 Summer
+           Predicted Capacity 26 vs. Actual Capacity 3
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG480C A03 Summer
+           Predicted Capacity 26 vs. Actual Capacity 3
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 2 enteries for SENG480C A04 Summer
+           Predicted Capacity 26 vs. Actual Capacity 3
+
+
+SENG480D
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 1 enteries for SENG480D A01 First Term
+           Predicted Capacity 18 vs. Actual Capacity 20
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 1 enteries for SENG480D A02 First Term
+           Predicted Capacity 18 vs. Actual Capacity 20
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 1 enteries for SENG480D A03 First Term
+           Predicted Capacity 18 vs. Actual Capacity 20
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 1 enteries for SENG480D A04 First Term
+           Predicted Capacity 18 vs. Actual Capacity 20
+
+   Second Term
+       A01
+           There were 1 enteries for SENG480D A01 Second Term
+           Predicted Capacity 18 vs. Actual Capacity 20
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 1 enteries for SENG480D A02 Second Term
+           Predicted Capacity 18 vs. Actual Capacity 20
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 1 enteries for SENG480D A03 Second Term
+           Predicted Capacity 18 vs. Actual Capacity 20
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 1 enteries for SENG480D A04 Second Term
+           Predicted Capacity 18 vs. Actual Capacity 20
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 1 enteries for SENG480D A01 Summer
+           Predicted Capacity 18 vs. Actual Capacity 20
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 1 enteries for SENG480D A02 Summer
+           Predicted Capacity 18 vs. Actual Capacity 20
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 1 enteries for SENG480D A03 Summer
+           Predicted Capacity 18 vs. Actual Capacity 20
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 1 enteries for SENG480D A04 Summer
+           Predicted Capacity 18 vs. Actual Capacity 20
+
+
+SENG490
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Second Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+
+SENG498
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Second Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+   Summer
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were no past classes found that match your parameters
+
+
+SENG499
+   First Term
+       A01
+           There were no past classes found that match your parameters, retrying with no term
+           There were 6 enteries for SENG499 A01 First Term
+           Predicted Capacity 63 vs. Actual Capacity 20
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 6 enteries for SENG499 A02 First Term
+           Predicted Capacity 63 vs. Actual Capacity 20
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 6 enteries for SENG499 A03 First Term
+           Predicted Capacity 63 vs. Actual Capacity 20
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 6 enteries for SENG499 A04 First Term
+           Predicted Capacity 63 vs. Actual Capacity 20
+
+   Second Term
+       A01
+           There were 1 enteries for SENG499 A01 Second Term
+           Predicted Capacity 20 vs. Actual Capacity 20
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 6 enteries for SENG499 A02 Second Term
+           Predicted Capacity 63 vs. Actual Capacity 20
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 6 enteries for SENG499 A03 Second Term
+           Predicted Capacity 63 vs. Actual Capacity 20
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 6 enteries for SENG499 A04 Second Term
+           Predicted Capacity 63 vs. Actual Capacity 20
+
+   Summer
+       A01
+           There were 5 enteries for SENG499 A01 Summer
+           Predicted Capacity 72 vs. Actual Capacity 0
+       A02
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 6 enteries for SENG499 A02 Summer
+           Predicted Capacity 63 vs. Actual Capacity 20
+       A03
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 6 enteries for SENG499 A03 Summer
+           Predicted Capacity 63 vs. Actual Capacity 20
+       A04
+           There were no past classes found that match your parameters, retrying with no term
+           There were no past classes found that match your parameters, retrying with no term and section
+           There were 6 enteries for SENG499 A04 Summer
+           Predicted Capacity 63 vs. Actual Capacity 20
+
+

@@ -1,96 +1,130 @@
 import pandas as pd
 from sklearn import linear_model
 import json
+import csv
+
+years = [2020, 2019, 2018, 2017, 2016, 2015, 2014]
+
+
+#Hardcoded values for size of each year of enrolment data
+program_size = {
+    'year1': [112, 124, 128, 94, 111, 89, 84],
+    'year2': [90+14, 99+17, 102+13, 75+10, 89+9, 71+7, 68+8],
+#   'year2transfer': [14, 17, 13, 10, 9, 7, 8],
+    'year3': [92, 68, 78, 63, 60, 55, 54],
+    'year4': [55, 63, 50, 48, 44, 43, 21],
+    'year5and6': [50+8, 40+8, 39+7, 35+7, 34+3, 17+3, 17+4]
+#   'year6': [8, 8, 7, 7, 3, 3, 4],
+#   'year7': [2, 1, 1, 1, 1, 1, 1]
+    }   
+
+#program_size = {'year1': [112, 124, 128, 94, 111, 89, 84],
+#    'year2': [90, 99, 102, 75, 89, 71, 68],
+#    'year2transfer': [14, 17, 13, 10, 9, 7, 8],
+#    'year3': [92, 68, 78, 63, 60, 55, 54],
+#    'year4': [55, 63, 50, 48, 44, 43, 21],
+#    'year5': [50, 40, 39, 35, 34, 17, 17],
+#    'year6': [8, 8, 7, 7, 3, 3, 4],
+#    'year7': [2, 1, 1, 1, 1, 1, 1]}
 
 #Turns JSON file into dict
-f = open('sengclasses.json', encoding='utf-8')
-classinfo = json.load(f)
-classinfo = [x for x in classinfo if x is not None]
+def CreateDictFromJSON(URL):
+    f = open(URL, encoding='utf-8')
+    result = json.load(f)
+    result = [x for x in result if x is not None]
+    return result
 
-#Array to indicate which years data is available for the predicted class
-yearfound = [0, 0, 0, 0, 0, 0, 0, 0]
+def CreatePrediction(class_name, term_name, section):
+    class_info = CreateDictFromJSON("sengclasses.json")
 
-#List of columns made to make future alterations easier
-X_columns = ['year1', 'year2', 'year2transfer', 'year3', 'year4', 'year5', 'year6', 'year7']
+    actual_2021_capactity = 0
 
-#2021 Enrolment used to predict 2021 class size
-programsize2021 = [113, 90, 15, 93, 74, 44, 10, 2]
+    #Parameters used to get past class sizes
+    #class_name = "SENG499"
+    #term_name = "First Term"
+    #term_name = "Second Term"
+    #term_name = "Summer"
+    #section = ""
 
-if len(X_columns) != len(programsize2021):
-    print("Lists 'X_columns' and 'programsize2021' must be of identical length")
-    exit()
+    #Ensures a class is being searched for
+    if class_name == None:
+        print("You must enter a class name")
+        exit()
 
-#Without 2021 enrolment for testing purposes
-programsize = {'year': [2020, 2019, 2018, 2017, 2016, 2015, 2014], 
-	'year1': [112, 124, 128, 94, 111, 89, 84],
-	'year2': [90, 99, 102, 75, 89, 71, 68],
-	'year2transfer': [14, 17, 13, 10, 9, 7, 8],
-	'year3': [92, 68, 78, 63, 60, 55, 54],
-	'year4': [55, 63, 50, 48, 44, 43, 21],
-	'year5': [50, 40, 39, 35, 34, 17, 17],
-	'year6': [8, 8, 7, 7, 3, 3, 4],
-	'year7': [2, 1, 1, 1, 1, 1, 1]}
+    training_data =  pd.DataFrame(dtype='int')
 
-#List of size for each semester
-class_sizes = []
+    #Searches through dict to find each class size for specified parameters
+    for c in class_info:
+        #Looks for correct class plus term and section when they are specified.
+        if class_name in c['subjectCourse']:
+            if "A" in c['termDesc'] and (term_name in c['termDesc'] or term_name == None): 
+                if section in c['sequenceNumber'] or section == None:
+                    #Gets int of the year the found class was offered 
+                    year_found = int(c["term"][0:4])
+                    #Tests if year corresponds to one we have enrolment data for
+                    if years[-1] <= year_found <= years[0]:
+                        #Creates row of that year's SENG program enrolment data
+                        new_row = []
+                        for year_sizes in program_size:
+                            new_row.append(program_size[year_sizes][years.index(year_found)])
+                        #Adds the known course capacity to end of row 
+                        new_row.append(int(c['maximumEnrollment']))
+                        #Adds row of enrolment data + course capacity to traing data frame
+                        training_data = pd.concat([training_data, pd.Series(new_row)], axis=1)
+                    #Gets 2021 year to compare result against for testing
+                    elif year_found == 2021:
+                        actual_2021_capactity = int(c['maximumEnrollment'])
 
-#Stores actual class size in 2021 to compare to prediction
-classsize2021 = 0
+    #Each classes data coresponds to a column when it needs to be in a row
+    training_data = training_data.transpose()
+    return (training_data, actual_2021_capactity)
 
-#Searches through dict to find each class size for specified parameters
-for c in classinfo:
-    #Looks for correct class, term and section
-	if "SENG265" in c['subjectCourse'] and "First Term" in c['termDesc'] and "A02" in c['sequenceNumber']:
-        #Determines year class was offered, adds it to class size list and indicates it in yearfound array 
-		if "2014" in c['termDesc']:
-			class_sizes.insert(0, c['maximumEnrollment'])
-			yearfound[6] = 1
-		elif "2015" in c['termDesc']:
-			class_sizes.insert(0, c['maximumEnrollment'])
-			yearfound[5] = 1
-		elif "2016" in c['termDesc']:
-			class_sizes.insert(0, c['maximumEnrollment'])
-			yearfound[4] = 1
-		elif "2017" in c['termDesc']:
-			class_sizes.insert(0, c['maximumEnrollment'])
-			yearfound[3] = 1
-		elif "2018" in c['termDesc']:
-			class_sizes.insert(0, c['maximumEnrollment'])
-			yearfound[2] = 1
-		elif "2019" in c['termDesc']:
-			class_sizes.insert(0, c['maximumEnrollment'])
-			yearfound[1] = 1
-		elif "2020" in c['termDesc']:
-			class_sizes.insert(0, c['maximumEnrollment'])
-			yearfound[0] = 1
-		elif "2021" in c['termDesc']:
-			classsize2021 = c['maximumEnrollment']
+open('results.txt', 'w').close()
 
-#If class data was not found for a year, remove that year from program enrolment numbers
-for x in range(0, 6):
-    if yearfound[x] != 1:
-        for c in X_columns:
-            del programsize[c][x]
+with open('AllSengClasses.csv', newline='') as f:
+    reader = csv.reader(f)
+    data = list(reader)
 
+f = open("results.txt", "a")
 
-#The independant/X values
-independent =  pd.DataFrame()
-for i in range(0, len(X_columns)):
-    independent.insert(i, X_columns[i], programsize[X_columns[i]], True)
+term_names = ["First Term", "Second Term", "Summer"]
+sections = ["A01", "A02", "A03", "A04"]
+for c in data[0]:
+    f.write(c + "\n")
+    for t in term_names:
+        f.write("   "+t+ "\n")
+        for s in sections:
+            f.write("       "+s+ "\n")
+            training_data, actual_2021_capactity = CreatePrediction(c, t, s)
 
-#The dependant/Y values
-dependent = pd.DataFrame(class_sizes)
+            #Tests if any results were found and ends program before an error is thrown
+            if training_data.empty:
+                f.write("           There were no past classes found that match your parameters, retrying with no term"+ "\n")
+                training_data, actual_2021_capactity = CreatePrediction(c, "", s)
+                if training_data.empty:
+                    f.write("           There were no past classes found that match your parameters, retrying with no term and section"+ "\n")
+                    training_data, actual_2021_capactity = CreatePrediction(c, "", "")
+                    if training_data.empty:
+                        f.write("           There were no past classes found that match your parameters"+ "\n")
+                        break
 
-#A dataframe containing values that will be used to predict 2021 class capacity
-predict_capacities = pd.DataFrame(programsize2021)
+            f.write("           There were " + str(len(training_data)) + " enteries for " + c + " " + s + " " + t+ "\n")
 
-#Creates the linear regression model
-model = linear_model.LinearRegression()
+            #Creates the linear regression model
+            model = linear_model.LinearRegression()
 
-#Fits the model using independent and dependent values 
-model.fit(independent.values, dependent)
+            #Splits training_data data frame into independant and dependant variables for training
+            independant_variables = training_data[range(0, len(program_size))]
+            dependant_variables = training_data[[len(program_size)]]
 
-print(programsize2021)
+            #Fits the model using independent and dependent values 
+            model.fit(independant_variables, dependant_variables)
 
-print('Predicted 2021 capacity: ', model.predict([programsize2021]))
-print('Actual Capacity: ' + str(classsize2021))
+            programsize2021 = [113, 90+15, 93, 74, 44+10]
+
+            #programsize2021 = [113, 90, 15, 93, 74, 44, 10, 2]
+
+            predicted_capacity = int(model.predict([programsize2021])[0][0])
+            f.write("           Predicted Capacity " + str(predicted_capacity) + " vs. Actual Capacity " + str(actual_2021_capactity)+ "\n")
+        f.write("\n")
+    f.write("\n")
