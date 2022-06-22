@@ -15,4 +15,4 @@ def hello_world():
 def predict_class_size():
     # Call function from other py file
     # Store and return the output from the function
-    return model.predictSize("test")
+    return model.predict_size("test")

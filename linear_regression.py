@@ -1,4 +1,4 @@
-from py_sqlite import *
+import py_sqlite as sqlite
 import pandas as pd
 from sklearn import linear_model
 
@@ -17,27 +17,26 @@ class linear_regression:
 		}
 
 		#Creates connection to database
-		connection = create_connection("database.sqlite")
+		connection = sqlite.create_connection("database.sqlite")
 		if connection is None:
 			print("Failed to connect to database. Exiting.")
 			return None
-		init_tables(connection)
+		sqlite.init_tables(connection)
 
 		#Iterates through program data and adds enrolment data if it does not exist
 		for s in programsize:
 			for y in self.years:
-				if not find_enrollment(connection, str(y), s):
-					insert_enrollment(connection, (str(y), s, programsize[s][-(y-self.years[0])]))
+				if not sqlite.find_enrollment(connection, str(y), s):
+					sqlite.insert_enrollment(connection, (str(y), s, programsize[s][(self.years[0])-y]))
 
-	def predictSize(self, class_name):
+		connection.close()
+
+	def predict_size(self, class_name):
 		#Creates a connection to the database
-		connection = create_connection("database.sqlite")
+		connection = sqlite.create_connection("database.sqlite")
 		if connection is None:
 			print("Failed to connect to database. Exiting.")
 			return None
-
-		#Hard coded exaple data for SENG360 A02 Sept-Dec term
-		SENG310ExampleData= [60, 56, 52, 62, 52, 40, 35]
 
 		#Dict where enrolment data is stored before it is turned into dataframe for training
 		enrolment_data = {
@@ -51,11 +50,14 @@ class linear_regression:
 		#Iterates through database to get values
 		for s in enrolment_data:
 			for year in self.years:
-				enrolment_data[s].append(find_enrollment(connection, year, s)[0])
+				enrolment_data[s].append(sqlite.find_enrollment(connection, year, s)[0])
 		
+		#Hard coded exaple data for SENG360 A02 Sept-Dec term
+		seng_310_example_data= [60, 56, 52, 62, 52, 40, 35]
+
 		#Creates dataframes used for training the model
 		independent =  pd.DataFrame.from_dict(enrolment_data)
-		dependent = pd.DataFrame.from_dict({'course_sizes': SENG310ExampleData})
+		dependent = pd.DataFrame.from_dict({'course_sizes': seng_310_example_data})
 
 		#Creates the linear regression model
 		model = linear_model.LinearRegression()
@@ -69,6 +71,8 @@ class linear_regression:
 
 		#The actual predicted 2021 result
 		predicted_capacity = int(model.predict([programsize2021])[0][0])
+
+		connection.close()
 
 		#Returns string to be output
 		return("Predicted 2021 Capacity for SENG310 Fall A02 " + str(predicted_capacity) + " vs. Actual Capacity for SENG310 Fall A02 " + str(expected_2021_data))
