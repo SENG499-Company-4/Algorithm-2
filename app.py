@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, request
+import os
 
 # from TestExample.LinearRegTesting import *
 
@@ -17,7 +18,12 @@ def predict_class_size():
 
     receivedJSON = request.json
     print(receivedJSON[0])
-    receivedJSON[0]["capacity"] = 299
+
+    # receivedJSON[0]["capacity"] = 299
 
     return jsonify(receivedJSON)
-    # return "Class Capacity: 45" + "\n\n" + "We did it!"
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=True, host='0.0.0.0', port=port)
