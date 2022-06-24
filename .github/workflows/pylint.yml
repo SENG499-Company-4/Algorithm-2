@@ -1,0 +1,23 @@
+# The basic template was taken from the GitHub Workflow Templates
+name: Pylint
+
+on: [pull_request]
+
+jobs:
+  pylint:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        pip3 install -r requirements.txt
+        pip3 install pylint
+    - name: Analysing the code with pylint
+      run: |
+        pylint --exit-zero $(git ls-files '*.py')

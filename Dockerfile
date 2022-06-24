@@ -8,6 +8,5 @@ WORKDIR /app
 COPY . /app
 
 RUN pip3 install -r requirements.txt
-WORKDIR /app/TestExample
 
-CMD ["python3", "./LinearRegTesting.py"]
+CMD ["python3", "./app.py"]
