@@ -1,5 +1,5 @@
-import py_sqlite as sqlite
 import pandas as pd
+from algorithm import py_sqlite as sqlite
 from sklearn import linear_model
 
 class linear_regression:

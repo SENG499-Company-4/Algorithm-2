@@ -1,4 +1,4 @@
-from linear_regression import linear_regression
+from algorithm import linear_regression
 from flask import Flask, jsonify, request
 import os
 
