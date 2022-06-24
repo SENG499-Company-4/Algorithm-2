@@ -1,10 +1,10 @@
+from linear_regression import linear_regression
 from flask import Flask, jsonify, request
 import os
 
-# from TestExample.LinearRegTesting import *
-
 app = Flask(__name__)
 
+model = linear_regression()
 
 @app.route("/")
 def hello_world():
@@ -15,6 +15,9 @@ def hello_world():
 def predict_class_size():
     # Call function from other py file
     # Store and return the output from the function
+
+    # Keep commented until algorithm is fully implemented
+    # return model.predict_size("test")
 
     receivedJSON = request.json
     print(receivedJSON[0])
