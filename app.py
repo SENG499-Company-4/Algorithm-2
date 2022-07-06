@@ -16,13 +16,15 @@ def predict_class_size():
     # Call function from other py file
     # Store and return the output from the function
 
-    # Keep commented until algorithm is fully implemented
-    # return model.predict_size("test")
-
     receivedJSON = request.json
-    print(receivedJSON[0])
+    indx = 0
 
-    # receivedJSON[0]["capacity"] = 299
+    for course in receivedJSON:
+        if course["capacity"] != 0:
+            # currPrediction = model.predict_size(course["subject"] + course["code"])
+            currPrediction = course["capacity"]  # TODO: Remove once the algorithm is fully implemented
+            receivedJSON[indx]["capacity"] = currPrediction
+        indx += 1
 
     return jsonify(receivedJSON)
 
