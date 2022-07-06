@@ -11,7 +11,7 @@ env:
 jobs:
   docker:
     name: Docker
-    runs-on: ubuntu-latest
+    runs-on: python:3.9-slim
     steps:
       - uses: actions/checkout@v3
 
