@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-model = linear_regression()
+model = linear_regression.linear_regression()
 
 @app.route("/")
 def hello_world():
