@@ -3,6 +3,11 @@ from linear_regression import linear_regression
 import py_sqlite as sqlite
 import pytest
 
+# The range in which a prediction can fall 
+# (greater or less than) the average capacity for a course 
+# Expressed as a percentage
+ACCEPTABLE_RANGE = 0.2
+
 pytest.test_model = linear_regression()
 db_connection = sqlite.create_connection("database.sqlite")
 
@@ -71,10 +76,6 @@ def test_coefficients_table_is_populated():
     result = cur.rowcount()
     assert result > 0, "coefficients table is not populated"
 
-#TODO:
-    # figure out a way to test each course in the DB
-    # get a list of their past capacities, and make an acceptable range
-    # in which the predicted value can fall
 def get_average_capacity(course):
     cur = db_connection.cursor()
     cur.execute('''
@@ -95,6 +96,7 @@ def test_capcity_preciction():
     for course in course_list:
         predicted_capacity = pytest.test_model.predict_size(course)
         avg_capacity = get_average_capacity(course)
-        range_max = avg_capacity * 1.20
-        range_min = avg_capacity * 0.80
+        range_max = avg_capacity * (1 + ACCEPTABLE_RANGE)
+        range_min = avg_capacity * (1 - ACCEPTABLE_RANGE)
+        # Assume statements are used instead assert to allow for multiple tests in a single function
         pytest.assume(predicted_capacity >= range_min and predicted_capacity <= range_max)
