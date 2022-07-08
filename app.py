@@ -20,13 +20,23 @@ def predict_class_size():
     receivedJSON = request.json
     indx = 0
 
+    # No data was received, therefore return since there is nothing to work on.
+    if len(receivedJSON) < 1:
+        return
+
     for course in receivedJSON:
+        if not all(key in course for key in ("capacity", "semester", "seng_ratio", "subject", "code")):
+            print("Course data is malformed, skipping.")
+            continue
+
         if course["capacity"] != 0:
-            # # TODO: course["semester"] will need to be added when the algorithm PR is merged since the func sig changed.
+            # # TODO: course["semester"] will need to be added when the algorithm 2 PR is merged since the func sig changed.
+            # #  Also course["seng_ratio"] will need to be added as per the algorithm 2 PR.
             # currPrediction = model.predict_size(course["subject"] + course["code"])
             # # If this if statement is triggered, it means there was something wrong with connecting to the db.
             # if currPrediction is None:
             #     continue
+
             currPrediction = course["capacity"]  # TODO: Remove once the algorithm is fully implemented
             receivedJSON[indx]["capacity"] = currPrediction
         indx += 1
