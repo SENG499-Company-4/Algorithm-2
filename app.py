@@ -11,18 +11,21 @@ def hello_world():
     return "Hello World!"
 
 
-@app.route("/predict_class_size", methods=["POST"])
+@app.route("/predict_class_size", methods=["POST", "GET"])
 def predict_class_size():
     # Call function from other py file
     # Store and return the output from the function
 
     # Keep commented until algorithm is fully implemented
-    # return model.predict_size("test")
+    #return model.predict_size("SENG310")
+
+    #runs the method without returning for testing purposes
+    model.predict_size("SENG310")
 
     receivedJSON = request.json
     print(receivedJSON[0])
 
-    # receivedJSON[0]["capacity"] = 299
+    receivedJSON[0]["capacity"] = 299
 
     return jsonify(receivedJSON)
 
