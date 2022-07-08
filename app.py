@@ -18,11 +18,10 @@ def predict_class_size():
     # Store and return the output from the function
 
     receivedJSON = request.json
-    indx = 0
 
     # No data was received, therefore return since there is nothing to work on.
     if len(receivedJSON) < 1:
-        return
+        return jsonify([{}])
 
     for course in receivedJSON:
         if not all(key in course for key in ("capacity", "semester", "seng_ratio", "subject", "code")):
@@ -37,9 +36,8 @@ def predict_class_size():
             # if currPrediction is None:
             #     continue
 
-            currPrediction = course["capacity"]  # TODO: Remove once the algorithm is fully implemented
-            receivedJSON[indx]["capacity"] = currPrediction
-        indx += 1
+            currPrediction = course["capacity"] # TODO: Remove once the algorithm is implemented.
+            course["capacity"] = currPrediction
 
     return jsonify(receivedJSON)
 
