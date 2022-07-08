@@ -100,3 +100,10 @@ def test_capcity_preciction():
         range_min = avg_capacity * (1 - ACCEPTABLE_RANGE)
         # Assume statements are used instead assert to allow for multiple tests in a single function
         pytest.assume(predicted_capacity >= range_min and predicted_capacity <= range_max)
+
+def main():
+    test_linear_model()
+    test_db_connection()
+
+if __name__ == "main":
+    main()
