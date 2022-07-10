@@ -1,3 +1,3 @@
-linear_regression.py @jessebrowell
-app.py @dendya
-py_sqlite.py @ethan-mcnamara
+application/algorithm/linear_regression.py @jessebrowell
+application/app.py @dendya
+application/algorithm/py_sqlite.py @ethan-mcnamara
