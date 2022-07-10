@@ -1,6 +1,6 @@
 from multiprocessing import connection
-from linear_regression import linear_regression
-import py_sqlite as sqlite
+import algorithm.linear_regression as linear_regression
+from algorithm import py_sqlite as sqlite
 import pytest
 
 # The range in which a prediction can fall 
@@ -8,7 +8,7 @@ import pytest
 # Expressed as a percentage
 ACCEPTABLE_RANGE = 0.2
 
-pytest.test_model = linear_regression()
+pytest.test_model = linear_regression.linear_regression()
 db_connection = sqlite.create_connection("database.sqlite")
 
 def test_linear_model():
