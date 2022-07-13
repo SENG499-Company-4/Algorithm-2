@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - 'main'
-      - 'ben'
+  pull_request:
 
 env:
   IMAGE_NAME: company4-algorithm-2
