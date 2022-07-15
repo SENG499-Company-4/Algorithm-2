@@ -6,7 +6,7 @@ import pytest
 # The range in which a prediction can fall 
 # (greater or less than) the average capacity for a course 
 # Expressed as a percentage
-ACCEPTABLE_RANGE = 0.2
+ACCEPTABLE_RANGE = 0.15
 
 pytest.test_model = linear_regression.linear_regression()
 db_connection = sqlite.create_connection("database.sqlite")
