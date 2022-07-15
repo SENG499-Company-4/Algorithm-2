@@ -2,6 +2,7 @@ import sqlite3
 from sqlite3 import Error
 from typing import List
 
+
 def create_connection(db_file):
     """ 
     Create a database connection to a SQLite database
@@ -17,6 +18,7 @@ def create_connection(db_file):
         return None
     return conn
 
+
 def create_table(conn, create_table_sql):
     """ 
     Create a table from the create_table_sql statement
@@ -29,6 +31,7 @@ def create_table(conn, create_table_sql):
         c.execute(create_table_sql)
     except Error as e:
         print(e)
+
 
 def insert_course(conn, course):
     """
@@ -49,6 +52,7 @@ def insert_course(conn, course):
     conn.commit()
     return cur.lastrowid
 
+
 def insert_enrollment(conn, enrollment):
     """
     Create a new enrollment tuple into the enrollment table
@@ -65,6 +69,7 @@ def insert_enrollment(conn, enrollment):
     cur.execute(sql, enrollment)
     conn.commit()
     return cur.lastrowid
+
 
 def insert_coefficient(conn, enrollment):
     """
@@ -88,7 +93,8 @@ def insert_coefficient(conn, enrollment):
     conn.commit()
     return cur.lastrowid
 
-def init_tables (conn):
+
+def init_tables(conn):
     """
     Create the three required tables for the program
     :param conn: Connection object
@@ -126,10 +132,11 @@ def init_tables (conn):
                     REFERENCES courses (class_name, section, semester)
                 );
             """
-    
+
     create_table(conn, courses)
     create_table(conn, enrollment)
     create_table(conn, coefficients)
+
 
 def find_enrollment(conn, calendar_year: str, year_standing: str) -> int:
     """
@@ -145,12 +152,13 @@ def find_enrollment(conn, calendar_year: str, year_standing: str) -> int:
                     FROM `enrollment`
                     WHERE `calendar_year` LIKE ? 
                     AND `year_standing` LIKE ?""",
-                    (calendar_year, year_standing))  
+                (calendar_year, year_standing))
     result = cur.fetchall()
     if (result):
         return result[0]
     else:
         return 0
+
 
 def delete_enrollment(conn, calendar_year: str, year_standing: str):
     """
@@ -162,9 +170,10 @@ def delete_enrollment(conn, calendar_year: str, year_standing: str):
     cur = conn.cursor()
     cur.execute(""" DELETE FROM `enrollment` 
                     WHERE `calendar_year` LIKE ? 
-                    AND `year_standing` LIKE ?""", 
-                    (calendar_year, year_standing))
+                    AND `year_standing` LIKE ?""",
+                (calendar_year, year_standing))
     conn.commit()
+
 
 def find_course_with_semester(conn, class_name: str, year: str, section: str, semester: str) -> List:
     """
@@ -184,8 +193,29 @@ def find_course_with_semester(conn, class_name: str, year: str, section: str, se
                     AND `year` LIKE ?
                     AND `section` LIKE ?
                     AND `semester` LIKE ?""",
-                    (class_name, year, section, semester))
+                (class_name, year, section, semester))
     return cur.fetchall()
+
+
+def find_course_no_section(conn, class_name: str, year: str, semester: str) -> List:
+    """
+    Finds a course offered in a specific semester
+    :param conn: Connection object
+    :param class_name: Attribute to search for
+    :param year: Attribute to search for
+    :param semester: Attribute to search for
+    :return: List of course capacities matching
+    """
+
+    cur = conn.cursor()
+    cur.execute(""" SELECT `size`
+                    FROM `courses`
+                    WHERE `class_name LIKE ?
+                    AND `year` LIKE ?
+                    AND `semester` LIKE ?""",
+                (class_name, year, semester))
+    return cur.fetchall()
+
 
 def find_course_no_semester(conn, class_name: str, year: str, section: str) -> List:
     """
@@ -203,8 +233,9 @@ def find_course_no_semester(conn, class_name: str, year: str, section: str) -> L
                     WHERE `class_name` LIKE ?
                     AND `year` LIKE ?
                     AND `section` LIKE ?""",
-                    (class_name, year, section))
+                (class_name, year, section))
     return cur.fetchall()
+
 
 def delete_course(conn, class_name: str, year: str, section: str, semester: str):
     """
@@ -222,8 +253,9 @@ def delete_course(conn, class_name: str, year: str, section: str, semester: str)
                     AND `year` LIKE ?
                     AND `section` LIKE ?
                     AND `semester` LIKE ?""",
-                    (class_name, year, section, semester))
+                (class_name, year, section, semester))
     conn.commit()
+
 
 def find_coefficents(conn, class_name: str, section: str, semester: str) -> List:
     """
@@ -246,8 +278,9 @@ def find_coefficents(conn, class_name: str, section: str, semester: str) -> List
                     WHERE `class_name` LIKE ?
                     AND `section` LIKE ?
                     AND `semester` LIKE ?""",
-                    (class_name, section, semester))
+                (class_name, section, semester))
     return cur.fetchall()
+
 
 def delete_coefficients(conn, class_name: str, section: str, semester: str):
     """
@@ -264,12 +297,13 @@ def delete_coefficients(conn, class_name: str, section: str, semester: str):
                     WHERE `class_name` LIKE ?
                     AND `section` LIKE ?
                     AND `semester` LIKE ?""",
-                    (class_name, section, semester))
+                (class_name, section, semester))
     conn.commit()
+
 
 if __name__ == "__main__":
     conn = create_connection("./algo2_sqlite.db")
     init_tables(conn)
-    #insert_enrollment(conn, ("2020", "3", 500))
+    # insert_enrollment(conn, ("2020", "3", 500))
     print("Returned value: " + str(find_enrollment(conn, "2020", "3")))
     delete_enrollment(conn, "2020", "3")

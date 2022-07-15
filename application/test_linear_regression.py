@@ -11,10 +11,6 @@ ACCEPTABLE_RANGE = 0.15
 pytest.test_model = linear_regression.linear_regression()
 db_connection = sqlite.create_connection("./algorithm/database.sqlite")
 
-def test_linear_model():
-    result = pytest.test_model.predict_size("test")
-    assert result.startswith('Predicted'), "linear regression model did not run properly"
-
 def test_db_connection():
     result = db_connection
     assert result is not None, "connection to SQLite DB does not exist"
@@ -88,14 +84,14 @@ def get_average_capacity(course):
 def test_capcity_preciction():
     cur = db_connection.cursor()
     cur.execute('''
-                    SELECT DISTINCT `class_name`
+                    SELECT DISTINCT `class_name`, `semester`
                     FROM `courses`
                     WHERE `size` > 0
                 ''')
     course_list = cur.fetchall()
     for course in course_list:
-        predicted_capacity = pytest.test_model.predict_size(course)
-        avg_capacity = get_average_capacity(course)
+        predicted_capacity = pytest.test_model.predict_size(course[0], course[1])
+        avg_capacity = get_average_capacity(course)  # TODO: need to include semester
 
         range_max = avg_capacity * (1 + ACCEPTABLE_RANGE)
         range_min = avg_capacity * (1 - ACCEPTABLE_RANGE)
