@@ -9,4 +9,6 @@ COPY . /app/
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
-CMD ["python", "-m", "app.py"]
+WORKDIR /app/application
+
+CMD ["python", "app.py"]
