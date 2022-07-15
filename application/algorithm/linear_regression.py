@@ -1,15 +1,18 @@
 import pandas as pd
 from algorithm import py_sqlite as sqlite
 from sklearn import linear_model
-from create_db import create_db
-from os.path import exists
 
 class linear_regression:
 	years = [2020, 2019, 2018, 2017, 2016, 2015, 2014]	#Used for iterating through database
 
 	def __init__(self):
-		if not exists('database.sqlite'):
-			create_db()
+		#Tests connection to database
+		connection = sqlite.create_connection("database.sqlite")
+		if connection is None:
+			print("Failed to connect to database. Exiting.")
+			return None
+
+		connection.close()
 
 	def predict_size(self, class_name):
 		#Creates a connection to the database
@@ -51,9 +54,6 @@ class linear_regression:
 
 		#The actual predicted 2021 result
 		predicted_capacity = int(model.predict([programsize2021])[0][0])
-
-		print("Printing Example Course Size")
-		print(sqlite.find_course_with_semester(connection, "SENG310", "2017", "A01", "Jan"))
 
 		connection.close()
 
