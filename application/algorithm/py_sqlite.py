@@ -181,7 +181,7 @@ def find_course_with_semester(conn, class_name: str, year: str, section: str, se
     cur = conn.cursor()
     cur.execute(""" SELECT `size`
                     FROM `courses`
-                    WHERE `class_name LIKE ?
+                    WHERE `class_name` LIKE ?
                     AND `year` LIKE ?
                     AND `section` LIKE ?
                     AND `semester` LIKE ?""",
@@ -201,7 +201,7 @@ def find_course_no_semester(conn, class_name: str, year: str, section: str) -> L
     cur = conn.cursor()
     cur.execute(""" SELECT `size`
                     FROM `courses`
-                    WHERE `class_name LIKE ?
+                    WHERE `class_name` LIKE ?
                     AND `year` LIKE ?
                     AND `section` LIKE ?""",
                     (class_name, year, section))
