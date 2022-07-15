@@ -7,7 +7,7 @@ class linear_regression:
 
 	def __init__(self):
 		#Tests connection to database
-		connection = sqlite.create_connection("database.sqlite")
+		connection = sqlite.create_connection("./algorithm/database.sqlite")
 		if connection is None:
 			print("Failed to connect to database. Exiting.")
 			return None
@@ -16,7 +16,7 @@ class linear_regression:
 
 	def predict_size(self, class_name):
 		#Creates a connection to the database
-		connection = sqlite.create_connection("database.sqlite")
+		connection = sqlite.create_connection("./algorithm/database.sqlite")
 		if connection is None:
 			print("Failed to connect to database. Exiting.")
 			return None

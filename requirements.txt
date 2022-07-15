@@ -2,3 +2,4 @@ pandas>=0.1
 scikit-learn>=0.10
 flask>=2.0.3
 pytest>=0.10
+pytest-assume>=2.4.3
