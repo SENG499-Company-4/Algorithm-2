@@ -9,7 +9,7 @@ import pytest
 ACCEPTABLE_RANGE = 0.15
 
 pytest.test_model = linear_regression.linear_regression()
-db_connection = sqlite.create_connection("algorithm/database.sqlite")
+db_connection = sqlite.create_connection("algorithm.database.sqlite")
 
 def test_linear_model():
     result = pytest.test_model.predict_size("test")
