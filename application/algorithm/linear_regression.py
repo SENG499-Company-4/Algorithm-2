@@ -6,23 +6,23 @@ from sklearn import linear_model
 # TODO: Need to deal with the case when there are too few values to accurately predict the course capacity.
 
 class linear_regression:
-	years = [2020, 2019, 2018, 2017, 2016, 2015, 2014]	#Used for iterating through database
+    years = [2020, 2019, 2018, 2017, 2016, 2015, 2014]  # Used for iterating through database
 
-	def __init__(self):
-		#Tests connection to database
-		connection = sqlite.create_connection("database.sqlite")
-		if connection is None:
-			print("Failed to connect to database. Exiting.")
-			return None
+    def __init__(self):
+        # Tests connection to database
+        connection = sqlite.create_connection("database.sqlite")
+        if connection is None:
+            print("Failed to connect to database. Exiting.")
+            return None
 
-		connection.close()
+        connection.close()
 
-	def predict_size(self, class_name):
-		#Creates a connection to the database
-		connection = sqlite.create_connection("database.sqlite")
-		if connection is None:
-			print("Failed to connect to database. Exiting.")
-			return None
+    def predict_size(self, class_name, semester):
+        # Creates a connection to the database
+        connection = sqlite.create_connection("database.sqlite")
+        if connection is None:
+            print("Failed to connect to database. Exiting.")
+            return None
 
         # Dict where enrolment data is stored before it is turned into dataframe for training
         enrolment_data = {
