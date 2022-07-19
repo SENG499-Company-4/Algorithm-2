@@ -24,20 +24,22 @@ def predict_class_size():
         return jsonify([])
 
     for course in receivedJSON:
+        # TODO: Do we keep ELEC? There are no instances of it in the database.
+        if course["subject"] not in ("ECE", "SENG", "CSC", "ELEC"):
+            print("Not a core ENGR course, skipping")
+            continue
+
         if not all(key in course for key in ("capacity", "semester", "seng_ratio", "subject", "code")):
             print("Course data is malformed, skipping.")
             continue
 
         if course["capacity"] != 0:
-            # # TODO: course["semester"] will need to be added when the algorithm 2 PR is merged since the func sig changed.
-            # #  Also course["seng_ratio"] will need to be added as per the algorithm 2 PR.
-            # currPrediction = model.predict_size(course["subject"] + course["code"])
-            # # If this if statement is triggered, it means there was something wrong with connecting to the db.
-            # if currPrediction is None:
-            #     continue
+            currPrediction = model.predict_size(course["subject"] + course["code"], course["semester"])
+            # If this if statement is triggered, it means there was something wrong with connecting to the db.
+            if currPrediction is None:
+                continue
 
-            currPrediction = course["capacity"] # TODO: Remove once the algorithm is implemented.
-            course["capacity"] = currPrediction
+            course["capacity"] = currPrediction[0]
 
     return jsonify(receivedJSON)
 

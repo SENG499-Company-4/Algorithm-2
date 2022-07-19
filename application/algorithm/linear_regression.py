@@ -27,6 +27,13 @@ class linear_regression:
             print("Failed to connect to database. Exiting.")
             return None
 
+        if semester.upper() == "FALL":
+            semester = self.semesters[2]
+        elif semester.upper() == "SPRING":
+            semester = self.semesters[0]
+        else:
+            semester = self.semesters[1]
+
         status = "Normal"
 
         # Dict where enrolment data is stored before it is turned into dataframe for training
@@ -96,7 +103,7 @@ class linear_regression:
         model = linear_model.LinearRegression()
 
         # Fits the model using independent and dependent values
-        model.fit(independent, dependent)
+        model.fit(independent.values, dependent)
 
         # 2021 Values of year size used for testing results
         programsize2021 = [113, 90 + 15, 93, 74, 44 + 10]
