@@ -9,7 +9,7 @@ from sklearn import linear_model
 class linear_regression:
     years = [2020, 2019, 2018, 2017, 2016, 2015, 2014]  # Used for iterating through database
     semesters = ["Jan", "Summer", "Sept"]
-    defaultClassSize = 50  # This is the default size of a class if the algorithm hasn't seen the course before
+    defaultCapacity = 50  # This is the default size of a class if the algorithm hasn't seen the course before
 
     def __init__(self):
         # Tests connection to database
@@ -27,6 +27,8 @@ class linear_regression:
             print("Failed to connect to database. Exiting.")
             return None
 
+        status = "Normal"
+
         # Dict where enrolment data is stored before it is turned into dataframe for training
         enrolment_data = {
             'year1': [],
@@ -42,6 +44,7 @@ class linear_regression:
             for year in self.years:
                 enrolment_data[s].append(sqlite.find_enrollment(connection, str(year), s)[0])
 
+        numberOfMissingYears = 0
         for year in self.years:
             # Will return a list if there are multiple sections for a given course. Using "A%" to filter out any
             # tutorial or lab capacities which start with T and B respectively.
@@ -57,7 +60,23 @@ class linear_regression:
                 raw_course_data.append(currentCourseData)
             else:
                 raw_course_data.append([(0,)])
+                numberOfMissingYears += 1
                 # TODO: Figure out what we should set the missing values to if there are too few.
+
+        if numberOfMissingYears == len(self.years):
+            connection.close()
+            status = "New"
+            return ceil(self.defaultCapacity), status
+
+        predictedCapacity = 0
+        if (len(self.years) - numberOfMissingYears) == 2 or (len(self.years) - numberOfMissingYears) == 1:
+            for course in raw_course_data:
+                if course[0][0] != 0:
+                    predictedCapacity += course[0][0]
+            predictedCapacity /= (len(self.years) - numberOfMissingYears)
+            connection.close()
+            status = "Sporadic"
+            return ceil(predictedCapacity), status
 
         # This will aggregate all sections of a given course in a given semester and year together creating a
         # total course capacity for that offering of the course.
@@ -88,4 +107,4 @@ class linear_regression:
         connection.close()
 
         # Returns string to be output
-        return ceil(predicted_capacity)
+        return ceil(predicted_capacity), status

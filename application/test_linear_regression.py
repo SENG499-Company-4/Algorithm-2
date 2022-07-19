@@ -90,16 +90,19 @@ def test_capcity_preciction():
                     FROM `courses`
                     WHERE `size` > 0
                 ''')
+
     course_list = cur.fetchall()
     for course in course_list:
         predicted_capacity = pytest.test_model.predict_size(course[0], course[1])
         avg_capacity = get_average_capacity(course[0], course[1], "A%")
 
+        if predicted_capacity[1] is not "Normal":
+            continue
+
         range_max = avg_capacity[0][0] * (1 + ACCEPTABLE_RANGE)
         range_min = avg_capacity[0][0] * (1 - ACCEPTABLE_RANGE)
-        # Assume statements are used instead assert to allow for multiple tests in a single function
-
-        pytest.assume(range_min <= predicted_capacity <= range_max)
+        # Assume statements are used instead assert to allow for multiple tespts in a single function
+        pytest.assume(range_min <= predicted_capacity[0] <= range_max)
 
 def main():
     test_linear_model()
