@@ -8,10 +8,12 @@ from sklearn import linear_model
 
 class linear_regression:
     years = [2020, 2019, 2018, 2017, 2016, 2015, 2014]  # Used for iterating through database
+    semesters = ["Jan", "Summer", "Sept"]
+    defaultClassSize = 50  # This is the default size of a class if the algorithm hasn't seen the course before
 
     def __init__(self):
         # Tests connection to database
-        connection = sqlite.create_connection("database.sqlite")
+        connection = sqlite.create_connection("./algorithm/database.sqlite")
         if connection is None:
             print("Failed to connect to database. Exiting.")
             return None
@@ -20,7 +22,7 @@ class linear_regression:
 
     def predict_size(self, class_name, semester):
         # Creates a connection to the database
-        connection = sqlite.create_connection("database.sqlite")
+        connection = sqlite.create_connection("./algorithm/database.sqlite")
         if connection is None:
             print("Failed to connect to database. Exiting.")
             return None
@@ -38,15 +40,34 @@ class linear_regression:
         # Iterates through database to get values
         for s in enrolment_data:
             for year in self.years:
-                enrolment_data[s].append(sqlite.find_enrollment(connection, str(year), s))
-                # Will return a list if there are multiple sections for a given course.
-                raw_course_data.append(sqlite.find_course_no_section(connection, class_name, str(year), semester))
+                enrolment_data[s].append(sqlite.find_enrollment(connection, str(year), s)[0])
+
+        for year in self.years:
+            # Will return a list if there are multiple sections for a given course. Using "A%" to filter out any
+            # tutorial or lab capacities which start with T and B respectively.
+            currentCourseData = sqlite.find_course_with_semester(connection, class_name, str(year), "A%", semester)
+
+            if len(currentCourseData) == 0:
+                for altSemester in self.semesters:
+                    currentCourseData = sqlite.find_course_with_semester(connection, class_name, str(year), "A%", altSemester)
+                    if len(currentCourseData) != 0:
+                        break
+
+            if len(currentCourseData) != 0:
+                raw_course_data.append(currentCourseData)
+            else:
+                raw_course_data.append([(0,)])
+                # TODO: Figure out what we should set the missing values to if there are too few.
 
         # This will aggregate all sections of a given course in a given semester and year together creating a
         # total course capacity for that offering of the course.
         course_data = []
-        for data in raw_course_data:
-            course_data.append(sum(data))
+        indx = 0
+        for course in raw_course_data:
+            course_data.append(0)
+            for offering in course:
+                course_data[indx] += offering[0]
+            indx += 1
 
         # Creates dataframes used for training the model
         independent = pd.DataFrame.from_dict(enrolment_data)
@@ -56,7 +77,7 @@ class linear_regression:
         model = linear_model.LinearRegression()
 
         # Fits the model using independent and dependent values
-        model.fit(independent.values, dependent)
+        model.fit(independent, dependent)
 
         # 2021 Values of year size used for testing results
         programsize2021 = [113, 90 + 15, 93, 74, 44 + 10]

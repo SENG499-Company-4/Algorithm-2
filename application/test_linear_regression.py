@@ -72,14 +72,16 @@ def test_coefficients_table_is_populated():
     result = cur.arraysize
     assert result > 0, "coefficients table is not populated"
 
-def get_average_capacity(course):
+def get_average_capacity(course, semester, section):
     cur = db_connection.cursor()
     cur.execute('''
                     SELECT AVG(`size`)
                     FROM `courses`
                     WHERE `class_name` LIKE ?
-                ''', course)
-    return cur.fetchall()[0][0]
+                    AND   `semester`   LIKE ?
+                    AND   `section`    LIKE ?
+                ''', (course, semester, section))
+    return cur.fetchall()
 
 def test_capcity_preciction():
     cur = db_connection.cursor()
@@ -91,11 +93,12 @@ def test_capcity_preciction():
     course_list = cur.fetchall()
     for course in course_list:
         predicted_capacity = pytest.test_model.predict_size(course[0], course[1])
-        avg_capacity = get_average_capacity(course)  # TODO: need to include semester
+        avg_capacity = get_average_capacity(course[0], course[1], "A%")
 
-        range_max = avg_capacity * (1 + ACCEPTABLE_RANGE)
-        range_min = avg_capacity * (1 - ACCEPTABLE_RANGE)
+        range_max = avg_capacity[0][0] * (1 + ACCEPTABLE_RANGE)
+        range_min = avg_capacity[0][0] * (1 - ACCEPTABLE_RANGE)
         # Assume statements are used instead assert to allow for multiple tests in a single function
+
         pytest.assume(range_min <= predicted_capacity <= range_max)
 
 def main():

@@ -20,8 +20,8 @@ def predict_class_size():
     receivedJSON = request.json
 
     # No data was received, therefore return since there is nothing to work on.
-    if len(receivedJSON) < 1:
-        return jsonify([{}])
+    if len(receivedJSON) == 0:
+        return jsonify([])
 
     for course in receivedJSON:
         if not all(key in course for key in ("capacity", "semester", "seng_ratio", "subject", "code")):
