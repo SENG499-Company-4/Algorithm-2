@@ -24,8 +24,7 @@ def predict_class_size():
         return jsonify([])
 
     for course in receivedJSON:
-        # TODO: Do we keep ELEC? There are no instances of it in the database.
-        if course["subject"] not in ("ECE", "SENG", "CSC", "ELEC"):
+        if course["subject"] not in ("ECE", "SENG", "CSC"):
             print("Not a core ENGR course, skipping")
             continue
 
@@ -33,7 +32,7 @@ def predict_class_size():
             print("Course data is malformed, skipping.")
             continue
 
-        if course["capacity"] != 0:
+        if course["capacity"] == 0:
             currPrediction = model.predict_size(course["subject"] + course["code"], course["semester"])
             # If this if statement is triggered, it means there was something wrong with connecting to the db.
             if currPrediction is None:
