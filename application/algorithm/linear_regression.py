@@ -29,8 +29,8 @@ class linear_regression:
             semester = self.semesters[1]
         elif semester.upper() == "SPRING":
             semester = self.semesters[0]
-        else:
-            semester = self.semesters[2]
+        elif semester.upper() == "SUMMER":
+            semester.self.semesters[2]
 
         status = "Normal"
 
@@ -123,13 +123,13 @@ class linear_regression:
         dependent = pd.DataFrame.from_dict({'course_sizes': course_data})
 
         # Creates the linear regression model
-        model = linear_model.LinearRegression()
+        model = linear_model.LinearRegression(positive=True)    
 
         # Fits the model using independent and dependent values
         model.fit(independent.values, dependent)
 
         # 2021 Values of year size used for testing results
-        programsize2021 = [113, 90 + 15, 93, 74, 44 + 10]
+        programsize2021 = [113, 90 + 15, 93, 74, 44 + 10 + 2]
 
         # The actual predicted 2021 result
         predicted_capacity = int(model.predict([programsize2021])[0][0])
