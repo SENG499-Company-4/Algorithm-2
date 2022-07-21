@@ -74,19 +74,35 @@ def test_coefficients_table_is_populated():
 
 def get_average_capacity(course, semester, section):
     cur = db_connection.cursor()
+
+    # Get the sum of all capacities of all offerings of this course
     cur.execute('''
-                    SELECT AVG(`size`)
+                    SELECT SUM(`size`)
                     FROM `courses`
                     WHERE `class_name` LIKE ?
                     AND   `semester`   LIKE ?
                     AND   `section`    LIKE ?
                 ''', (course, semester, section))
-    return cur.fetchall()
+    total_capacity = cur.fetchall()
+
+    # Get the number of distinct semesters in which this course was offered
+    cur.execute('''
+                    SELECT COUNT (*)
+                    FROM    (
+                            SELECT DISTINCT `year`, `semester`
+                            FROM `courses`
+                            WHERE `class_name` LIKE ?
+                            AND   `semester`   LIKE ?
+                            AND   `section`    LIKE ?  
+                            )  
+                ''', (course, semester, section))
+    num_offerings = cur.fetchall()
+    return total_capacity[0][0] / num_offerings[0][0]
 
 def test_capcity_preciction():
     cur = db_connection.cursor()
     cur.execute('''
-                    SELECT DISTINCT `class_name`, `semester`
+                    SELECT DISTINCT  `class_name`, `semester`
                     FROM `courses`
                     WHERE `size` > 0
                 ''')
@@ -94,19 +110,20 @@ def test_capcity_preciction():
     course_list = cur.fetchall()
     for course in course_list:
         predicted_capacity = pytest.test_model.predict_size(course[0], course[1])
+        print(predicted_capacity)
         avg_capacity = get_average_capacity(course[0], course[1], "A%")
 
-        if predicted_capacity[1] is not "Normal":
+        if predicted_capacity[1] != "Normal":
             continue
 
-        range_max = avg_capacity[0][0] * (1 + ACCEPTABLE_RANGE)
-        range_min = avg_capacity[0][0] * (1 - ACCEPTABLE_RANGE)
-        # Assume statements are used instead assert to allow for multiple tespts in a single function
+        range_max = avg_capacity * (1 + ACCEPTABLE_RANGE)
+        range_min = avg_capacity * (1 - ACCEPTABLE_RANGE)
+        # Assume statements are used instead assert to allow for multiple tests in a single function
         pytest.assume(range_min <= predicted_capacity[0] <= range_max)
 
-def main():
-    test_linear_model()
-    test_db_connection()
+#def main():
+    #test_linear_model()
+    #test_db_connection()
 
-if __name__ == "main":
-    main()
+#if __name__ == "main":
+    #main()
