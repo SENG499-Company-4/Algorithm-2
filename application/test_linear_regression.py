@@ -9,7 +9,7 @@ import pytest
 ACCEPTABLE_RANGE = 0.15
 
 pytest.test_model = linear_regression.linear_regression()
-db_connection = sqlite.create_connection("./algorithm/database.sqlite")
+db_connection = sqlite.create_connection("./application/algorithm/database.sqlite")
 
 def test_db_connection():
     result = db_connection
