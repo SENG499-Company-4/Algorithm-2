@@ -99,7 +99,7 @@ def get_average_capacity(course, semester, section):
     num_offerings = cur.fetchall()
     return total_capacity[0][0] / num_offerings[0][0]
 
-def test_capcity_preciction_changedname():
+def test_capcity_preciction():
     cur = db_connection.cursor()
     cur.execute('''
                     SELECT DISTINCT  `class_name`, `semester`
