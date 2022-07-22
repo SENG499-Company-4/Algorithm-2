@@ -30,7 +30,7 @@ class linear_regression:
         elif semester.upper() == "SPRING":
             semester = self.semesters[0]
         elif semester.upper() == "SUMMER":
-            semester.self.semesters[2]
+            semester = self.semesters[2]
 
         status = "Normal"
 
