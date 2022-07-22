@@ -466,6 +466,3 @@ CSC485C,Summer,23
 CSC586C,Summer,22
 ECE596A,Summer,65
 ECE596B,Summer,65
-=========================== short test summary info ============================
-FAILED test_linear_regression.py::test_capcity_preciction - pytest_assume.plu...
-========================= 1 failed, 7 passed in 5.07s ==========================
