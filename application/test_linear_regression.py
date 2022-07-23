@@ -107,7 +107,7 @@ def get_capacities(course, section):
         if capacity[0] < min_semester_capacity:
             min_semester_capacity = capacity[0]
 
-    capacities = (max_semester_capacity, min_semester_capacity, all_capacities)
+    capacities = (max_semester_capacity, min_semester_capacity)
     return capacities
 
 
