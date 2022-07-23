@@ -2,19 +2,21 @@ from multiprocessing import connection
 import algorithm.linear_regression as linear_regression
 from algorithm import py_sqlite as sqlite
 import pytest
-from math import ceil
+from math import ceil, floor
 
 # The range in which a prediction can fall 
 # (greater or less than) the average capacity for a course 
 # Expressed as a percentage
-ACCEPTABLE_RANGE = 0.25
+ACCEPTABLE_RANGE = 0.50
 
 pytest.test_model = linear_regression.linear_regression()
-db_connection = sqlite.create_connection("./application/algorithm/database.sqlite")
+db_connection = sqlite.create_connection("./algorithm/database.sqlite")
+
 
 def test_db_connection():
     result = db_connection
     assert result is not None, "connection to SQLite DB does not exist"
+
 
 def test_courses_table_init():
     cur = db_connection.cursor()
@@ -26,6 +28,7 @@ def test_courses_table_init():
     result = cur.fetchone()[0] == 1
     assert result is True, "courses table does not exist"
 
+
 def test_enrollment_table_init():
     cur = db_connection.cursor()
     cur.execute(''' 
@@ -35,6 +38,7 @@ def test_enrollment_table_init():
                     AND name='enrollment' ''')
     result = cur.fetchone()[0] == 1
     assert result is True, "enrollment table does not exist"
+
 
 def test_coefficients_table_init():
     cur = db_connection.cursor()
@@ -46,6 +50,7 @@ def test_coefficients_table_init():
     result = cur.fetchone()[0] == 1
     assert result is True, "coefficients table does not exist"
 
+
 def test_courses_table_is_populated():
     cur = db_connection.cursor()
     cur.execute('''
@@ -54,6 +59,7 @@ def test_courses_table_is_populated():
                     ''')
     result = cur.arraysize
     assert result > 0, "courses table is not populated"
+
 
 def test_enrollment_table_is_populated():
     cur = db_connection.cursor()
@@ -64,6 +70,7 @@ def test_enrollment_table_is_populated():
     result = cur.arraysize
     assert result > 0, "enrollment table is not populated"
 
+
 def test_coefficients_table_is_populated():
     cur = db_connection.cursor()
     cur.execute('''
@@ -73,50 +80,38 @@ def test_coefficients_table_is_populated():
     result = cur.arraysize
     assert result > 0, "coefficients table is not populated"
 
-def get_average_capacity(course, semester, section):
+
+def get_capacities(course, section):
     cur = db_connection.cursor()
-
-    #
-    # Start of debugging stuff
-    cur.execute('''
-                    SELECT SUM(`size`), `semester`, COUNT(*)
-                    FROM `courses`
-                    WHERE `class_name` LIKE "SENG310"
-                    AND `section` LIKE "A%"
-                    AND `semester` LIKE ?           
-                ''', (semester,))
-    #print(cur.fetchall())
-
-    # End of debugging stuff
-    #
 
     # Get the sum of all capacities of all offerings of this course
     cur.execute('''
                     SELECT SUM(`size`)
                     FROM `courses`
                     WHERE `class_name` LIKE ?
-                    AND   `semester`   LIKE ?
                     AND   `section`    LIKE ?
-                ''', (course, semester, section))
-    total_capacity = cur.fetchall()
-    if total_capacity[0][0] is None:
+                    GROUP BY `year`, `semester`
+                ''', (course, section))
+    all_capacities = cur.fetchall()
+
+    # If there are no values, ignore the 
+    if all_capacities == []:
         return linear_regression.linear_regression.defaultCapacity
 
-    # Get the number of distinct semesters in which this course was offered
-    cur.execute('''
-                    SELECT COUNT (*)
-                    FROM    (
-                            SELECT DISTINCT `year`, `semester`
-                            FROM `courses`
-                            WHERE `class_name` LIKE ?
-                            AND   `semester`   LIKE ?
-                            AND   `section`    LIKE ?  
-                            )  
-                ''', (course, semester, section))
-    num_offerings = cur.fetchall()
-    return ceil((total_capacity[0][0] / num_offerings[0][0]))
+    max_semester_capacity = all_capacities[0][0]
+    min_semester_capacity = all_capacities[0][0]
+    for capacity in all_capacities:
+        if capacity[0] > max_semester_capacity:
+            max_semester_capacity = capacity[0]
+        
+        if capacity[0] < min_semester_capacity:
+            min_semester_capacity = capacity[0]
 
-def test_capcity_preciction():
+    capacities = (max_semester_capacity, min_semester_capacity, all_capacities)
+    return capacities
+
+
+def test_capacity_prediction():
     cur = db_connection.cursor()
     cur.execute('''
                     SELECT DISTINCT  `class_name`, `semester`
@@ -127,19 +122,14 @@ def test_capcity_preciction():
     course_list = cur.fetchall()
     for course in course_list:
         predicted_capacity = pytest.test_model.predict_size(course[0], course[1])
-        avg_capacity = get_average_capacity(course[0], course[1], "A%")
+        capacities = get_capacities(course[0], "A%")
 
         if predicted_capacity[1] != "Normal":
             continue
 
-        range_max = ceil(avg_capacity * (1 + ACCEPTABLE_RANGE))
-        range_min = ceil(avg_capacity * (1 - ACCEPTABLE_RANGE))
+        range_max = ceil(capacities[0] * (1 + ACCEPTABLE_RANGE))
+        range_min = floor(capacities[1])
 
-        # if (str(course[0]) == "SENG310"):
-        #     print("Course: " + course[0] + ", semester: " + course[1] + ", range_max: " + str(range_max) + ", range_min: " + str(range_min) + ", pred_value: " + str(predicted_capacity[0]))
-        # else:
-        #     continue
-        
         # Assume statements are used instead assert to allow for multiple tests in a single function
         if (not(range_min <= predicted_capacity[0] <= range_max)):
             pytest.assume(range_min <= predicted_capacity[0] <= range_max)

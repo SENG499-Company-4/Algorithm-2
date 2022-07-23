@@ -8,19 +8,22 @@ class linear_regression:
     years = [2020, 2019, 2018, 2017, 2016, 2015, 2014]  # Used for iterating through database
     semesters = ["Jan", "Sept", "Summer"]
     defaultCapacity = 65  # This is the default size of a class if the algorithm hasn't seen the course before
+    programSize = []
 
     def __init__(self):
         # Tests connection to database
-        connection = sqlite.create_connection("./application/algorithm/database.sqlite")
+        connection = sqlite.create_connection("./algorithm/database.sqlite")
         if connection is None:
             print("Failed to connect to database. Exiting.")
             return None
 
+        for yearStanding in ("year1", "year2", "year3", "year4", "year5+"):
+            self.programSize.append(sqlite.find_enrollment(connection, (self.years[0] + 1), yearStanding)[0])
         connection.close()
 
     def predict_size(self, class_name, semester):
         # Creates a connection to the database
-        connection = sqlite.create_connection("./application/algorithm/database.sqlite")
+        connection = sqlite.create_connection("./algorithm/database.sqlite")
         if connection is None:
             print("Failed to connect to database. Exiting.")
             return None
@@ -128,11 +131,8 @@ class linear_regression:
         # Fits the model using independent and dependent values
         model.fit(independent.values, dependent)
 
-        # 2021 Values of year size used for testing results
-        programsize2021 = [113, 90 + 15, 93, 74, 44 + 10 + 2]
-
         # The actual predicted 2021 result
-        predicted_capacity = int(model.predict([programsize2021])[0][0])
+        predicted_capacity = int(model.predict([self.programSize])[0][0])
 
         connection.close()
 
