@@ -15,4 +15,5 @@ jobs:
       run:  pip3 install -r requirements.txt
     - name: Run Tests with PyTest
       run: |
+        cd ./application
         pytest
